@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:paddingBottom="16dp"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/image_MagicBall"
+            android:layout_width="294dp"
+            android:layout_height="216dp"
+            android:layout_above="@+id/askButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="54dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ball5"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/askButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffc83c"
+        android:fontFamily="monospace"
+        android:text="@string/ask"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="@string/ask"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>
